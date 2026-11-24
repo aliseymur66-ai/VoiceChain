@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.22)
 
 project(VoiceChain VERSION 0.1.0)
 
-# JUCE qovluğunu birbaşa layihəyə daxil edirik
 add_subdirectory(JUCE)
 
 juce_add_plugin(VoiceChain
@@ -17,8 +16,8 @@ juce_add_plugin(VoiceChain
 juce_generate_juce_header(VoiceChain)
 
 target_sources(VoiceChain PRIVATE
-    Source/PluginProcessor.h
-    Source/PluginProcessor.cpp)
+    PluginProcessor.h
+    PluginProcessor.cpp)
 
 target_compile_definitions(VoiceChain PUBLIC
     JUCE_WEB_BROWSER=0
