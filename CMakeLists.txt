@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.22)
+
 project(VoiceChain VERSION 0.1.0)
 
-add_subdirectory(JUCE)
+# JUCE kitabxanasını tapmaq üçün standart üsul
+find_package(JUCE CONFIG REQUIRED)
 
 juce_add_plugin(VoiceChain
     COMPANY_NAME "Minos"
